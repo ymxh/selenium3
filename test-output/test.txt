@@ -1,0 +1,3 @@
+cn.selenium.testng.TestNG_Demo f 2018-03-16 11:42:15 2毫秒 SUCCESS
+cn.selenium.testng.TestNG_Demo1 test1 2018-03-16 11:42:15 0毫秒 SUCCESS
+cn.selenium.testng.TestNG_Demo1 test2 2018-03-16 11:42:15 1毫秒 FAILURE

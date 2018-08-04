@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/dom4j"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/selenium3.9.1"/>
+	<classpathentry kind="lib" path="E:/Rocheng/Java_Learn/java学习使用的jar包/Log4j/log4j-1.2.17/apache-log4j-1.2.17/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="E:/Rocheng/Java_Learn/java学习使用的jar包/Selenium/selenium-java-2.53.1/selenium-2.53.1/libs/testng-6.9.9.jar" sourcepath="E:/Rocheng/Java_Learn/java学习使用的jar包/TestNG/testng-6.8.7-sources.jar/testng-6.8.7-sources.jar"/>
+	<classpathentry kind="lib" path="E:/Rocheng/Java_Learn/java学习使用的jar包/Selenium/selenium-java-2.53.1/selenium-2.53.1/libs/jcommander-1.48.jar"/>
+	<classpathentry kind="lib" path="E:/Rocheng/Java_Learn/java学习使用的jar包/mysql/mysql-connector-java-5.1.46.jar"/>
+	<classpathentry kind="lib" path="E:/Rocheng/Java_Learn/java学习使用的jar包/Log4j/自定义log4j的jar包，加上了线程id的打印/myLog4j.jar"/>
+	<classpathentry kind="lib" path="E:/Rocheng/Java_Learn/java学习使用的jar包/Selenium/selenium-java-2.53.1/selenium-2.53.1/libs/commons-io-2.4.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

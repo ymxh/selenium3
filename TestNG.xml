@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="test" parallel="tests"> 
+<!-- suite name="test" > -->
+	
+	<test name="chrome65">
+		<!-- parameter name="browserName" value="chrome" />  -->
+		<!-- parameter name="browserVersion" value="65.0.3325.181" /> -->
+		<classes>
+			<class name="cn.selenium.testng.OpenUrl" />
+		</classes>
+	</test>
+	<!--	
+	
+	 <test name="firefox60">
+		<parameter name="browserName" value="firefox" />
+		<parameter name="browserVersion" value="60.0" />
+		<classes>
+			<class name="cn.selenium.testng.OpenUrl" />
+		</classes>
+	</test>	
+	
+	<test name="checkPageTDK">
+		<parameter name="browserName" value="chrome" />
+		<parameter name="browserVersion" value="55.0.2883.87" />
+		<classes>
+			<class name="cn.selenium.testng.PCSEOTdkTest" />
+		</classes>
+	</test>	
+	<test name="gameSearch">
+		<parameter name="browserName" value="chrome" />
+		<parameter name="browserVersion" value="55.0.2883.87" />
+		<classes>
+			<class name="cn.selenium.testng.GameSearchTest" />
+		</classes>
+	</test>-->
+	<listeners>
+		<listener class-name="cn.selenium.testng.CustomReport2" />
+	</listeners>	
+</suite>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testcase>
+	<homepage>
+		<case1 param="/" exp="//H1[text()='8868手游交易平台']owin//H3[text()='必玩游戏']owin//H3[text()='新游热榜']owin//H2[text()='今日资讯']owin//div[@class='right']/div[2]/div/a/strong
+		owin//div[@class='right']/div[3]/div/a/strong"/>
+	</homepage>
+</testcase>
