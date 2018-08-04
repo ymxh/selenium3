@@ -18,22 +18,7 @@
 		<classes>
 			<class name="cn.selenium.testng.OpenUrl" />
 		</classes>
-	</test>	
-	
-	<test name="checkPageTDK">
-		<parameter name="browserName" value="chrome" />
-		<parameter name="browserVersion" value="55.0.2883.87" />
-		<classes>
-			<class name="cn.selenium.testng.PCSEOTdkTest" />
-		</classes>
-	</test>	
-	<test name="gameSearch">
-		<parameter name="browserName" value="chrome" />
-		<parameter name="browserVersion" value="55.0.2883.87" />
-		<classes>
-			<class name="cn.selenium.testng.GameSearchTest" />
-		</classes>
-	</test>-->
+	</test>	-->
 	<listeners>
 		<listener class-name="cn.selenium.testng.CustomReport2" />
 	</listeners>	
