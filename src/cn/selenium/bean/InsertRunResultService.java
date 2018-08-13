@@ -28,10 +28,9 @@ public class InsertRunResultService {
 	}
 	
 	
-	public void deleteData(){
+	public void deleteData(String browserInfo){
 		List<String> sql = new ArrayList<String>();
-		String sql_one = "select count(*) from autoselenium;";
-		String sql_two = "delete from autoselenium;";
+		String sql_two = "delete from autoselenium where xmltest_name='"+browserInfo+"';";
 		String sql_three = "alter table autoselenium AUTO_INCREMENT= 1;";
 		try {
 			MysqlHelper msh = new MysqlHelper();
