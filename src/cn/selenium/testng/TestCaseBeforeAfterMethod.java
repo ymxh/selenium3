@@ -22,8 +22,10 @@ public class TestCaseBeforeAfterMethod{
 	 * 清空TestNg数据表
 	 */
 	@BeforeSuite(alwaysRun=true)
-	public void TestDeleteTableData(){
-		new InsertRunResultService().deleteData();
+	@Parameters({"browserName","browserVersion"})
+	public void TestDeleteTableData(String browserName,String browserVersion){
+		new InsertRunResultService().deleteData(browserName+browserVersion);
+		System.out.println("浏览器名："+browserName+"||浏览器版本："+browserVersion);
 		logger.info("清空TestNg数据表");
 	}
 	

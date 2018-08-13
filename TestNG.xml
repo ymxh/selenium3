@@ -3,9 +3,9 @@
 <suite name="test" parallel="tests"> 
 <!-- suite name="test" > -->
 	
-	<test name="chrome65">
-		<!-- parameter name="browserName" value="chrome" />  -->
-		<!-- parameter name="browserVersion" value="65.0.3325.181" /> -->
+	<!-- parameter name="browserName" value="chrome" />  -->
+	<!-- parameter name="browserVersion" value="65.0.3325.181" /> -->
+	<test name="openurl">
 		<classes>
 			<class name="cn.selenium.testng.OpenUrl" />
 		</classes>
@@ -18,7 +18,22 @@
 		<classes>
 			<class name="cn.selenium.testng.OpenUrl" />
 		</classes>
-	</test>	-->
+	</test>	
+	
+	<test name="checkPageTDK">
+		<parameter name="browserName" value="chrome" />
+		<parameter name="browserVersion" value="55.0.2883.87" />
+		<classes>
+			<class name="cn.selenium.testng.PCSEOTdkTest" />
+		</classes>
+	</test>	
+	<test name="gameSearch">
+		<parameter name="browserName" value="chrome" />
+		<parameter name="browserVersion" value="55.0.2883.87" />
+		<classes>
+			<class name="cn.selenium.testng.GameSearchTest" />
+		</classes>
+	</test>-->
 	<listeners>
 		<listener class-name="cn.selenium.testng.CustomReport2" />
 	</listeners>	

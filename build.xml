@@ -16,11 +16,17 @@
 	<taskdef resource="testngtasks" classpathref="run_classpath" />
 
 	<target name="clean">
-		<delete dir="${basedir}/bin/*" />	
-		<delete dir="${TestNG_output_dir}/*" />
+		<delete dir="${basedir}/bin" />	
+		<delete dir="${TestNG_output_dir}" />
 	</target>
 	
-	<target name="comple" depends="clean">
+	<target name="create" depends="clean">
+		<mkdir dir="${basedir}/bin" />	
+		<copy file="${basedir}/src/log4j.properties" tofile="${basedir}/bin/log4j.properties" />
+		<copy file="${basedir}/src/test.properties" tofile="${basedir}/bin/test.properties" />
+	</target>
+	
+	<target name="comple" depends="create">
 		<javac srcdir="src" destdir="bin" debug="on" classpathref="run_classpath" encoding="utf-8" includeAntRuntime="false" />
 	</target>
 	

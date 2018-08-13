@@ -232,6 +232,33 @@ public class MysqlHelper {
        
         return map;
     }
+    
+    /**
+     * 数据库查询操作，返回多条单字段记录
+     * @param sql语句
+     * @return 返回list集合类型，包含查询的结果
+     * @throws SQLException
+     */
+     public List<Object> selectReturnResultList(String sql) throws SQLException
+     {
+    	 List<Object> list = new ArrayList<Object>();
+         try {
+         	 pStatement = connection.prepareStatement(sql);         
+             resultset = pStatement.executeQuery(); 
+              while(resultset.next())
+              {            	  
+            	list.add(resultset.getObject(1));
+              }
+ 		} catch (Exception e) {
+ 			// TODO: handle exception
+ 			 e.printStackTrace();
+ 		}finally{
+ 			this.closeConnection(resultset,pStatement,connection);
+ 		}
+        
+         return list;
+     }
+     
     /**
      * 查询数据库，返回多条记录
      * @param sql语句
